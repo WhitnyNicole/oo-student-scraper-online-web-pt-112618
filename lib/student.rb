@@ -9,6 +9,7 @@ class Student
       self.send("#{k}=", v)
     end 
     @@all.push(self)
+    binding.pry
   end
 
   def self.create_from_collection(students_array)
